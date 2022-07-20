@@ -21,6 +21,7 @@ ion-toolbar{
     padding-bottom: 5px;
     margin-top: -10%;
     border-radius: 10%;
+   
 }
 .title-header p{
     font-family:cursive;
@@ -33,9 +34,18 @@ ion-toolbar{
 }
 .dashboard{
     color: white;
-    font-size: large;
+    font-size: 20px;
+    margin: 10%;
 }
 .grid{
     color: white;
-    border: 1px white solid;
+    font-size: 15px;
+}
+.grid img{
+    background-color: white;
+    width: 80%;
+    padding: 15px;
+}
+.buttons{
+    margin-left: 15%;
 }

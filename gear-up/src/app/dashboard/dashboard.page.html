@@ -19,14 +19,29 @@
   </div>
   <div class="grid">
     <ion-grid>
-      <ion-row>
-        <ion-col id="add"></ion-col>
-        <ion-col id="view"></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col id="edit"></ion-col>
-        <ion-col id="delete"></ion-col>
-      </ion-row>
+      <center>
+        <ion-row>
+          <ion-col id="add">
+            <ion-buttons class="buttons" (click)="add()"><img src="assets/img/cart.png" alt=""></ion-buttons> 
+            <p>Add Item</p>
+          </ion-col>
+          <ion-col id="view">
+           <ion-buttons class="buttons" > <img src="assets/img/search.png" alt=""></ion-buttons> 
+            <p>View Item</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="edit">
+            <ion-buttons class="buttons" (click)="edit()"><img src="assets/img/edit.png" alt=""></ion-buttons>
+            <p>Edit Item</p>
+          </ion-col>
+          <ion-col id="delete">
+            <ion-buttons class="buttons"><img src="assets/img/delete.png" alt=""></ion-buttons>
+            <p>Delete Item</p>
+          </ion-col>
+        </ion-row>
+      </center>
+      
     </ion-grid>
   </div>
 

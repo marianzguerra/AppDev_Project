@@ -13,4 +13,11 @@ export class DashboardPage implements OnInit {
   ngOnInit() {
   }
 
+  add(){
+    this.router.navigate(['add-item']);
+  }
+  edit(){
+    this.router.navigate(['edit-item']);
+  }
+
 }
