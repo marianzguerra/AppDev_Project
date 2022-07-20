@@ -1,14 +1,17 @@
+ion-content{
+    --background:#282d36;
+}
 ion-button{
     display: block;
     font-family: Century Gothic;
-    font-size: 20px;
-    width: 100px;
+    font-size: 15px;
+    width: 30%;
     margin: auto;
     border: 3px;
 }
 
 ion-toolbar{
-    --background:#5b8de3;
+    --background:#282d36;
     color: white;
     border: 0px;
 }
@@ -19,4 +22,21 @@ ion-toolbar{
 .profile{
     width: 45px;
     height: 45px;
+}
+.add-card{
+    background-color: #5b8de3;
+    width: 80%;
+    margin-top:10%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+ion-card-content, ion-item, ion-label, ion-input{
+    --background:#5b8de3;
+}
+.input{
+    border: 1px white solid;
+    width: 100%;
+}
+ion-input{
+    --padding-bottom:0%;
 }
