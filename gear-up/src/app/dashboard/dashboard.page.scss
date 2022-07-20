@@ -1,0 +1,41 @@
+ion-content{
+    --background:rgb(28, 26, 26);
+}
+ion-toolbar{
+    --background:#5b8de3;
+    color: white;
+    border: 0px;
+}
+.back-btn{
+    width: 30px;
+    height: 30px;
+}
+.profile{
+    width: 45px;
+    height: 45px;
+}
+.title-header{
+    background-color:#5b8de3;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 5px;
+    margin-top: -10%;
+    border-radius: 10%;
+}
+.title-header p{
+    font-family:cursive;
+    margin-top: 0%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.gear{
+    width: 65%;
+}
+.dashboard{
+    color: white;
+    font-size: large;
+}
+.grid{
+    color: white;
+    border: 1px white solid;
+}

@@ -1,9 +1,33 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>Dashboard</ion-title>
+    <ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img>
+    <ion-icon class="profile" name="person-circle-outline" slot="end"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="title-header">
+    <center>
+      <ion-img class="gear" src="assets/img/gear-up.png"></ion-img>
+      <p>I N V E N T O R Y</p>
+    </center>
+  </div>
+  <div class="dashboard">
+    <center>
+      <p>DASHBOARD</p>
+    </center>
+  </div>
+  <div class="grid">
+    <ion-grid>
+      <ion-row>
+        <ion-col id="add"></ion-col>
+        <ion-col id="view"></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col id="edit"></ion-col>
+        <ion-col id="delete"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 </ion-content>
