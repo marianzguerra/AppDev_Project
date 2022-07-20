@@ -1,0 +1,28 @@
+ion-content{
+    --background:#282d36;
+}
+ion-button{
+    display: block;
+    font-family: Century Gothic;
+    font-size: 15px;
+    width: 30%;
+    margin: auto;
+    border: 3px;
+}
+
+ion-toolbar{
+    --background:#282d36;
+    color: white;
+    border: 0px;
+}
+.back-btn{
+    width: 30px;
+    height: 30px;
+}
+.profile{
+    width: 45px;
+    height: 45px;
+}
+ion-button{
+    width: 80%;
+}

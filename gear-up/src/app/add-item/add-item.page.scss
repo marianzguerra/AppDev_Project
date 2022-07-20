@@ -39,4 +39,9 @@ ion-card-content, ion-item, ion-label, ion-input{
 }
 ion-input{
     --padding-bottom:0%;
+    --padding-left: 10px;
+
+}
+ion-label{
+    padding-left:5px;
 }

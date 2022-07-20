@@ -1,7 +1,9 @@
-<ion-header>
+
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>edit-item</ion-title>
-    
+    <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
+    <ion-title>EDIT ITEM</ion-title>
+    <ion-icon class="profile" name="person-circle-outline" slot="end"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -9,29 +11,33 @@
   <br>
 
   <ion-content>
-    <ion-searchbar animated></ion-searchbar>
+    <ion-searchbar class="search" animated color="primary" fill="outline"></ion-searchbar>
     <ion-card>
     <ion-card-content>
     <ion-item>
       <ion-label position="stacked"><b>Edit Item Name</b></ion-label>
-      <ion-input placeholder="Edit item Name"></ion-input>
+      <ion-input placeholder="  Edit item Name"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked"><b>Edit Item Nummber</b></ion-label>
-      <ion-input placeholder="Edit item Number"></ion-input>
+      <ion-input placeholder="  Edit item Number"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked"><b>Edit Item Quantity</b></ion-label>
-      <ion-input placeholder="Edit item Quantity"></ion-input>
+      <ion-input placeholder="  Edit item Quantity"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked"><b>Edit Item Category</b></ion-label>
-      <ion-input placeholder="Edit item Category"></ion-input>
+      <ion-input placeholder="  Edit item Category"></ion-input>
     </ion-item>
   </ion-card-content>
   </ion-card>
   
-  <ion-button shape="round">Save</ion-button>
-  <ion-button shape="round">Cancel</ion-button>
+  <ion-row>
+    <ion-col><ion-button shape="round">Save</ion-button></ion-col>
+    <ion-col><ion-button shape="round" color="danger">Cancel</ion-button></ion-col>
+  </ion-row>
+  
+  
   </ion-content>
 </ion-content>
