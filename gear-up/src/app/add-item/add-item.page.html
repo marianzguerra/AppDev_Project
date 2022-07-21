@@ -14,47 +14,47 @@
       <ion-card-content >
         
           <ion-item>
-            <ion-label position="stacked"><b>Item Name</b></ion-label>
+            <ion-label position="floating"><b>Item Name</b></ion-label> <br>
             <div class="input">
               <ion-input placeholder="  Add item Name" lines="none" type="text" formControlName="item"></ion-input>
             </div>  
           </ion-item>
           <span>
             <ng-container *ngIf="addItem.get('item').hasError('required')&& (addItem.get('item').touched || addItem.get('item').dirty)">
-              Field Cannot Be Empty.
+              Field cannot be empty.
             </ng-container>
           </span>
           <ion-item>
-            <ion-label position="stacked"><b>Item Number</b></ion-label>
+            <ion-label position="floating"><b>Item Number</b></ion-label> <br>
             <div class="input">
               <ion-input placeholder="  Add item Number" type="number" formControlName="num"></ion-input>
             </div>
           </ion-item>
           <span>
             <ng-container *ngIf="addItem.get('num').hasError('required')&& (addItem.get('num').touched || addItem.get('num').dirty)">
-              Field Cannot Be Empty.
+              Field cannot be empty.
             </ng-container>
           </span>
           <ion-item>
-            <ion-label position="stacked"><b>Item Quantity</b></ion-label>
+            <ion-label position="floating"><b>Item Quantity</b></ion-label><br>
             <div class="input">
               <ion-input placeholder="  Add item Quantity" type="number" formControlName="qty"></ion-input>
             </div>
           </ion-item>
           <span>
             <ng-container *ngIf="addItem.get('qty').hasError('required')&& (addItem.get('qty').touched || addItem.get('qty').dirty)">
-              Field Cannot Be Empty.
+              Field cannot be empty.
             </ng-container>
           </span>
           <ion-item>
-            <ion-label position="stacked"><b>Item Category</b></ion-label>
+            <ion-label position="floating"><b>Item Category</b></ion-label><br>
             <div class="input">
               <ion-input placeholder="  Add item Category" type="text" formControlName="category"></ion-input>
             </div>
           </ion-item>
           <span>
             <ng-container *ngIf="addItem.get('category').hasError('required')&& (addItem.get('category').touched || addItem.get('category').dirty)">
-              Field Cannot Be Empty.
+              Field cannot be empty.
             </ng-container>
           </span>
         
