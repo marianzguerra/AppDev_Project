@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
@@ -7,7 +8,13 @@ import { AlertController } from '@ionic/angular';
   templateUrl: './add-item.page.html',
   styleUrls: ['./add-item.page.scss'],
 })
-export class AddItemPage implements OnInit {
+export class AddItemPage {
+  addItem = new FormGroup({
+    item : new FormControl('', Validators.required),
+    num : new FormControl('', Validators.required),
+    qty: new FormControl('', Validators.required),
+    category: new FormControl('', Validators.required)
+  })
   
 
   constructor( private router:Router,private alertController: AlertController) { }
