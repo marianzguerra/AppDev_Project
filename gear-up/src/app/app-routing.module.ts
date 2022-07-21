@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'edit-item',
     loadChildren: () => import('./edit-item/edit-item.module').then( m => m.EditItemPageModule)
+  },
+  {
+    path: 'view-item',
+    loadChildren: () => import('./view-item/view-item.module').then( m => m.ViewItemPageModule)
   }
 
 

@@ -1,6 +1,8 @@
 ion-content{
     --background:#282d36;
+    z-index: inherit;
 }
+
 ion-button{
     display: block;
     font-family: Century Gothic;
@@ -23,25 +25,26 @@ ion-toolbar{
     width: 45px;
     height: 45px;
 }
-.add-card{
-    background-color: #5b8de3;
-    width: 80%;
-    margin-top:20%;
-    margin-left: 10%;
-    border-radius: 20px;
+.title{
+    color: white;
 }
-ion-card-content, ion-item, ion-label, ion-input{
+p{
+    color: black;
+}
+ion-card{
     --background:#5b8de3;
+    width: 90%;
+    max-width: 500px;
+    align-items: center;
+    display: block;
+    justify-items: center;
+    margin: 0 auto;
+    
 }
-.input{
+img{
     border: 1px white solid;
-    width: 100%;
-}
-ion-input{
-    --padding-bottom:0%;
-    --padding-left: 10px;
-
-}
-ion-label{
-    padding-left:5px;
+    width: 75%;
+    padding: 10px;
+    margin-left: 10%;
+    box-shadow: inset;
 }

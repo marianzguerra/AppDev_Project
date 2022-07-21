@@ -16,8 +16,12 @@ export class DashboardPage implements OnInit {
   add(){
     this.router.navigate(['add-item']);
   }
+  view(){
+    this.router.navigate(['view-item']);
+  }
   edit(){
     this.router.navigate(['edit-item']);
   }
+  
 
 }

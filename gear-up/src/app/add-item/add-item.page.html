@@ -1,5 +1,5 @@
 
-<ion-header class="ion-no-border">
+<ion-header>
   <ion-toolbar>
     <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
     <ion-title>ADD NEW ITEM</ion-title>
@@ -13,7 +13,7 @@
       <ion-item>
         <ion-label position="stacked"><b>Item Name</b></ion-label>
         <div class="input">
-          <ion-input placeholder="  Add item Name" lines=""></ion-input>
+          <ion-input placeholder="  Add item Name" lines="none"></ion-input>
         </div>  
       </ion-item>
       <ion-item>
@@ -37,5 +37,7 @@
     </ion-card-content>
   </ion-card>
 
-<ion-button shape="round">Add Item</ion-button>
+<ion-button shape="round" (click)="presentAlert()">Add Item</ion-button>
+
+
 </ion-content>
