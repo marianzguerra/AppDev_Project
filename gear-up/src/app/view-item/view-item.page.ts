@@ -22,5 +22,8 @@ export class ViewItemPage implements OnInit {
   masonry(){
     this.router.navigate(['masonry']);
   }
+  plumbing(){
+    this.router.navigate(['plumbing']);
+  }
 
 }

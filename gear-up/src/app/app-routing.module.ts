@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'masonry',
     loadChildren: () => import('./masonry/masonry.module').then( m => m.MasonryPageModule)
   },
+  {
+    path: 'plumbing',
+    loadChildren: () => import('./plumbing/plumbing.module').then( m => m.PlumbingPageModule)
+  },
 
   
 
