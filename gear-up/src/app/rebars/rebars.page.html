@@ -1,0 +1,56 @@
+<style>
+  ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    max-width: 700px; 
+  }
+
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+
+  ion-modal ion-toolbar {
+    --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
+    --color: white;
+  }
+</style>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
+    <ion-title>Rebars Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let r of rebars">
+    <ion-item button  id="{{r.id}}">{{r.name}}</ion-item>
+
+  <ion-modal #modal trigger="{{r.id}}">
+    <ng-template>
+      <ion-content class="modal-body">
+        <ion-toolbar>
+          <ion-title align="left">{{r.name}}</ion-title>
+          <ion-buttons slot="end" color="light" (click)="modal.dismiss()"><ion-img  class="close" src="assets/img/cancel.png"></ion-img></ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Rebars & GI Products</ion-card-subtitle>
+            <ion-card-title>{{r.name}}</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-label id="label">Size: </ion-label><ion-label>{{r.size}}</ion-label><br>
+            <ion-label id="label">Manufacturer: </ion-label><ion-label>{{r.manu}}</ion-label><br>
+            <ion-label id="label">Length: </ion-label><ion-label>{{r.length}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+
+  </ion-modal>
+</ion-list>
+</ion-content>
+

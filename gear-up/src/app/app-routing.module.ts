@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'plumbing',
     loadChildren: () => import('./plumbing/plumbing.module').then( m => m.PlumbingPageModule)
   },
+  {
+    path: 'rebars',
+    loadChildren: () => import('./rebars/rebars.module').then( m => m.RebarsPageModule)
+  },
 
   
 
