@@ -11,7 +11,13 @@
   <br>
 
   <ion-content>
-    <ion-searchbar class="search" animated color="primary" fill="outline"></ion-searchbar>
+    <ion-searchbar class="search" [(ngModel)]="term" animated color="primary" fill="outline"></ion-searchbar>
+
+    <ion-list>
+      <ion-item *ngFor="let item of list |filter:term">
+        <ion-button>{{item.name}}</ion-button>
+      </ion-item>
+    </ion-list>
     <ion-card>
     <ion-card-content>
     <ion-item>
