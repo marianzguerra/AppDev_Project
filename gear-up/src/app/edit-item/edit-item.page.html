@@ -14,7 +14,7 @@
 
     <ion-list *ngIf="term">
       <div class="items" *ngFor="let item of list |filter:term">
-        <ion-button (click)="editDetail()">{{item.name}}</ion-button>
+        <ion-item button (click)="editDetail()">{{item.name}}</ion-item>
       </div>
     </ion-list>
       <div *ngIf="!term">
