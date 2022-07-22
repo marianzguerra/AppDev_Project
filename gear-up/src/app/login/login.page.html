@@ -1,33 +1,32 @@
 
 <ion-content>
+  <body style = "background-image: linear-gradient(-135deg, rgb(101, 76, 0),rgb(0, 0, 0));
+  ">
+
   
     <div class="login-header">
-      <ion-img  src="assets/img/helmet.png"></ion-img>
+      <ion-img  src="assets/img/logo.png"></ion-img>
     </div>
-    <div class="img-label">
+    <!--<div class="img-label">
       <ion-img src="assets/img/blue.png"></ion-img>
-    </div>
+    </div>-->
   
-    <center>
     <form>
-      <div class="uname">
-        <ion-item>
-          <ion-icon name="mail"></ion-icon>
-          <ion-input type="text" placeholder="  UserID" type="text">  </ion-input>
-        </ion-item>
+      <div class="form-wrapper">
+          <ion-label position="floating">Username</ion-label>
+            <!--<ion-icon name="mail"></ion-icon>-->
+            <ion-input type="text" placeholder="  UserID" type="text">  </ion-input>
+        <br>
+          <ion-label position="floating">Password</ion-label>
+          <!--<ion-icon name="key-outline"></ion-icon>-->
+          <ion-input placeholder="  Password" type="Password">  </ion-input>
+      
+        <ion-button id="login" fill="clear" (click)="dashboard()">LogIn</ion-button>
       </div>
-     <div class="pass">
-      <ion-item>
-        <ion-icon name="key-outline"></ion-icon>
-        <ion-input placeholder="  Password" type="Password">  </ion-input>
-      </ion-item>
-     </div>
-      <ion-button id="login" fill="clear" (click)="dashboard()">LogIn</ion-button>
     </form>
-    </center>
   
   
-  
+  </body>
   
 
 </ion-content>
