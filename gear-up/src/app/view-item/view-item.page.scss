@@ -1,5 +1,5 @@
 ion-content{
-    --background:#282d36;
+    --background:#ffffff;
     z-index: inherit;
 }
 
@@ -13,7 +13,7 @@ ion-button{
 }
 
 ion-toolbar{
-    --background:#282d36;
+    --background:#000000;
     color: white;
     border: 0px;
 }
@@ -32,14 +32,17 @@ p{
     color: black;
 }
 ion-card{
-    --background:#5b8de3;
+    --background:#ffffff;
     width: 90%;
     max-width: 500px;
     align-items: center;
     display: block;
     justify-items: center;
     margin: 0 auto;
-    
+}
+.col-6{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+
 }
 img{
     border: 1px white solid;

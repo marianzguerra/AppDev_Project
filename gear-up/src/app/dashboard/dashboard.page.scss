@@ -47,6 +47,9 @@ img{
     margin: 10%;
 }
 .grid{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     padding-top: 50px;
     color: white;
     font-size: 15px;
@@ -54,8 +57,19 @@ img{
 .grid img{
     background-color: white;
     width: 80%;
-    padding: 15px;
 }
 .buttons{
     margin-left: 15%;
+}
+#add{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#view{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#delete{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#edit{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
