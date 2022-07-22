@@ -1,5 +1,5 @@
 ion-content{
-    --background:#ffffff;
+    --background:linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
 }
 ion-button{
     display: block;
@@ -33,14 +33,14 @@ ion-toolbar{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .add-card{
-    background-color: #5b8de3;
+    background-color: white;
     width: 80%;
     margin-top:20%;
     margin-left: 10%;
     border-radius: 20px;
 }
 ion-card-content, ion-item, ion-label, ion-input{
-    --background:#5b8de3;
+    --background: white;
 }
 .input{
     border: 1px white solid;
@@ -61,3 +61,7 @@ ion-label{
     font-size: 20px;
     font-family: Century Gothic;
   }
+  ion-title{
+    font-family: century gothic;
+    font-size: 22px;
+}
