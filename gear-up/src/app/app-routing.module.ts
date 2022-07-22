@@ -19,7 +19,8 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
-  },  {
+  },
+  {
     path: 'add-item',
     loadChildren: () => import('./add-item/add-item.module').then( m => m.AddItemPageModule)
   },
@@ -34,7 +35,16 @@ const routes: Routes = [
   {
     path: 'wood',
     loadChildren: () => import('./wood/wood.module').then( m => m.WoodPageModule)
-  }
+  },
+  {
+    path: 'delete-item',
+    loadChildren: () => import('./delete-item/delete-item.module').then( m => m.DeleteItemPageModule)
+  },  {
+    path: 'woodprod',
+    loadChildren: () => import('./delete/woodprod/woodprod.module').then( m => m.WoodprodPageModule)
+  },
+
+  
 
 
 

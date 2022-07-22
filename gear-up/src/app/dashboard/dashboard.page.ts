@@ -22,6 +22,9 @@ export class DashboardPage implements OnInit {
   edit(){
     this.router.navigate(['edit-item']);
   }
+  delete(){
+    this.router.navigate(['delete-item']);
+  }
   
 
 }

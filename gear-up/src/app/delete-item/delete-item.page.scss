@@ -1,0 +1,50 @@
+ion-content{
+    --background:#ffffff;
+    z-index: inherit;
+}
+
+ion-button{
+    display: block;
+    font-family: Century Gothic;
+    font-size: 15px;
+    width: 30%;
+    margin: auto;
+    border: 3px;
+}
+
+ion-toolbar{
+    --background:#000000;
+    color: white;
+    border: 0px;
+}
+.back-btn{
+    width: 30px;
+    height: 30px;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    margin-left: 2%;
+}
+
+ion-card{
+    --background:#ffffff;
+    width: 90%;
+    max-width: 500px;
+    align-items: center;
+    display: block;
+    justify-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.col-6{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+
+}
+img{
+    border: 1px white solid;
+    width: 75%;
+    padding: 10px;
+    margin-left: 10%;
+    box-shadow: inset;
+}
