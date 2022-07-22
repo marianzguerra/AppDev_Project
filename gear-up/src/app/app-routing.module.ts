@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'woodprod',
     loadChildren: () => import('./delete/woodprod/woodprod.module').then( m => m.WoodprodPageModule)
   },
+  {
+    path: 'masonry',
+    loadChildren: () => import('./masonry/masonry.module').then( m => m.MasonryPageModule)
+  },
 
   
 

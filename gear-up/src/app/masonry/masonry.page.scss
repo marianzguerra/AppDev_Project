@@ -1,0 +1,32 @@
+ion-content{
+    --background:#ffffff;
+    z-index: inherit;
+}
+
+ion-button{
+    display: block;
+    font-family: Century Gothic;
+    font-size: 15px;
+    width: 30%;
+    margin: auto;
+    border: 3px;
+}
+
+ion-toolbar{
+    --background:#000000;
+    color: white;
+    border: 0px;
+}
+.back-btn{
+    width: 30px;
+    height: 30px;
+}
+.close{
+    width: 27px;
+    height: 27px;
+}
+
+.modal-body{
+    --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
+   
+}
