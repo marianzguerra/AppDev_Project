@@ -1,0 +1,55 @@
+<style>
+  ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+
+  ion-modal ion-toolbar {
+    --background: rgb(14 116 144);
+    --color: white;
+  }
+</style>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
+    <ion-title>Wood Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let w of wood">
+    <ion-item button  id="{{w.id}}">{{w.name}}</ion-item>
+
+  <ion-modal #modal trigger="{{w.id}}">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title align="left">{{w.name}}</ion-title>
+          <ion-buttons slot="end" color="light" (click)="modal.dismiss()"><ion-img  class="close" src="assets/img/cancel.png"></ion-img></ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Wood Products</ion-card-subtitle>
+            <ion-card-title>{{w.name}}</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-label id="label">Size: </ion-label><ion-label>{{w.Size}}</ion-label><br>
+            <ion-label id="label">Thickness: </ion-label><ion-label>{{w.thick}}</ion-label><br>
+            <ion-label id="label">Quantity: </ion-label><ion-label>{{w.qty}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+
+  </ion-modal>
+</ion-list>
+</ion-content>
+

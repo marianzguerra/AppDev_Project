@@ -16,5 +16,8 @@ export class ViewItemPage implements OnInit {
   back(){
     this.router.navigate(['dashboard']);
   }
+  wood(){
+    this.router.navigate(['wood']);
+  }
 
 }

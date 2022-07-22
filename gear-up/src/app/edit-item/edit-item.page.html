@@ -10,19 +10,16 @@
 <ion-content>
   <br>
 
-  <ion-content>
     <ion-searchbar class="search" [(ngModel)]="term" animated color="primary" fill="outline"></ion-searchbar>
 
     <ion-list *ngIf="term">
-      <ion-item *ngFor="let item of list |filter:term">
-        <ion-button>{{item.name}}</ion-button>
-      </ion-item>
+      <div class="items" *ngFor="let item of list |filter:term">
+        <ion-button (click)="editDetail()">{{item.name}}</ion-button>
+      </div>
     </ion-list>
-    <ion-list *ngIf="!term" class="no-result">
-      <p style="text-align: center ; background-color:black; color:white;">Results will be shown here.</p>
-    </ion-list>
+      <div *ngIf="!term">
+        <p style="color: white; text-align:center">Results will be shown here.</p>
+      </div>
+    
   
-  
-  
-  </ion-content>
 </ion-content>

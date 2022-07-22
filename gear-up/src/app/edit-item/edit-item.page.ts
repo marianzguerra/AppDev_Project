@@ -25,4 +25,10 @@ export class EditItemPage implements OnInit {
     this.router.navigate(['dashboard']);
   }
 
+  openModal(){
+    const data={
+      name
+    }
+  }
+
 }
