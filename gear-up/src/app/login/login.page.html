@@ -3,7 +3,6 @@
   <body style = "background-image: linear-gradient(-135deg, rgb(101, 76, 0),rgb(0, 0, 0));
   ">
 
-  
     <div class="login-header">
       <ion-img  src="assets/img/logo.png"></ion-img>
     </div>
@@ -13,20 +12,21 @@
   
     <form>
       <div class="form-wrapper">
-          <ion-label position="floating">Username</ion-label>
+        <ion-item color="transparent" lines="none">
+          <ion-label position="floating"><p style="color: gold;">Username </p></ion-label>
             <!--<ion-icon name="mail"></ion-icon>-->
-            <ion-input type="text" placeholder="  UserID" type="text">  </ion-input>
-        <br>
-          <ion-label position="floating">Password</ion-label>
+            <ion-input type="text">  </ion-input>
+        
+        </ion-item>
+          <br>
+        <ion-item color="transparent" lines="none">
+          <ion-label position="floating"><p style="color: gold;">Password </p></ion-label>
           <!--<ion-icon name="key-outline"></ion-icon>-->
-          <ion-input placeholder="  Password" type="Password">  </ion-input>
-      
+          <ion-input type="Password">  </ion-input>
+        </ion-item>
+          
         <ion-button id="login" fill="clear" (click)="dashboard()">LogIn</ion-button>
       </div>
     </form>
-  
-  
   </body>
-  
-
 </ion-content>
