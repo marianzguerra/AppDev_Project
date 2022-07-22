@@ -27,10 +27,18 @@ back(){
 }
 async presentAlert() {
   const alert = await this.alertController.create({
-    header: 'Alert',
-    subHeader: 'Important message',
-    message: 'This is an alert!',
-    buttons: ['OK']
+    header: 'Are you sure you want to delete this item?',
+    cssClass: 'custom-alert',
+    buttons: [
+      {
+        text: 'No',
+        cssClass: 'alert-button-cancel'
+      },
+      {
+        text: 'Yes',
+        cssClass: 'alert-button-confirm'
+      }
+    ]
   });
 
   await alert.present();
