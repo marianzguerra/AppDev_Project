@@ -28,5 +28,12 @@ export class ViewItemPage implements OnInit {
   plumbing(){
     this.router.navigate(['plumbing']);
   }
+  painting(){
+    this.router.navigate(['painting'])
+  }
+  roofing(){
+    this.router.navigate(['roofing'])
+  }
+
 
 }

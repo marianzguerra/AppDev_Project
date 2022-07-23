@@ -17,6 +17,17 @@ ion-toolbar{
     color: white;
     border: 0px;
 }
+p{
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+ion-title{
+    font-family: century gothic;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
 .back-btn{
     width: 30px;
     height: 30px;
@@ -30,22 +41,7 @@ ion-toolbar{
     --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
    
 }
-h2{
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: lighter;
-    color: #ffffff;
-}
-.modal-buttons{
-    width: 100px;
-    margin: 0 auto;
-}
-
-ion-title{
-    font-family: century gothic;
-    font-size: 17px;
-    font-weight: lighter;
-}
 .banner{
-    --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.6));
+    --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
+   
 }

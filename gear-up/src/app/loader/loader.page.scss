@@ -5,7 +5,7 @@
     height: 100%
 }
 img{
-    height: 100px;
+    height: 150px;
 }
 .loader{
     display: flex;
@@ -13,4 +13,8 @@ img{
     padding-top: 50%;
     margin: auto;
     margin-top: 30%;
+}
+ion-content{
+    --background: linear-gradient(-135deg, rgba(222, 148, 0, 0.704), rgb(0, 0, 0));
+    --opacity:1;
 }

@@ -1,6 +1,6 @@
 ion-content{
-    --background:#ffffff;
-    z-index: inherit;
+    --background: linear-gradient(-135deg, rgba(222, 148, 0, 0.704), rgb(0, 0, 0));
+    --opacity:1;
 }
 
 ion-button{
@@ -17,6 +17,17 @@ ion-toolbar{
     color: white;
     border: 0px;
 }
+p{
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 18px;
+}
+ion-title{
+    font-family: century gothic;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
 .back-btn{
     width: 30px;
     height: 30px;
@@ -27,6 +38,10 @@ ion-toolbar{
 }
 
 .modal-body{
+    --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
+   
+}
+.banner{
     --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
    
 }

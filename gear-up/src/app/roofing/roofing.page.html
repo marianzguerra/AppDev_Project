@@ -1,3 +1,4 @@
+
 <style>
   ion-modal {
     --height: 50%;
@@ -26,29 +27,29 @@
 
 <ion-content>
   <ion-card class="banner">
-    <p text-align="center">Wood Products
+    <p text-align="center">Roofing & Insulation Products
     </p>
   </ion-card>
-  <ion-list *ngFor="let w of wood">
-    <ion-item button  id="{{w.id}}">{{w.name}}</ion-item>
+  <ion-list *ngFor="let r of roofing">
+    <ion-item button  id="{{r.id}}">{{r.name}}</ion-item>
 
-  <ion-modal #modal trigger="{{w.id}}">
+  <ion-modal #modal trigger="{{r.id}}">
     <ng-template>
       <ion-content class="modal-body">
         <ion-toolbar>
-          <ion-title align="left">{{w.name}}</ion-title>
+          <ion-title align="left">{{r.name}}</ion-title>
           <ion-buttons slot="end" color="light" (click)="modal.dismiss()"><ion-img  class="close" src="assets/img/cancel.png"></ion-img></ion-buttons>
         </ion-toolbar>
         <ion-card>
           <ion-card-header>
-            <ion-card-subtitle>Wood Products</ion-card-subtitle>
-            <ion-card-title>{{w.name}}</ion-card-title>
+            <ion-card-subtitle>Roofing & Insulation Products</ion-card-subtitle>
+            <ion-card-title>{{r.name}}</ion-card-title>
           </ion-card-header>
         
           <ion-card-content>
-            <ion-label id="label">Size: </ion-label><ion-label>{{w.Size}}</ion-label><br>
-            <ion-label id="label">Thickness: </ion-label><ion-label>{{w.thick}}</ion-label><br>
-            <ion-label id="label">Quantity: </ion-label><ion-label>{{w.qty}}</ion-label>
+            <ion-label id="label">Size: </ion-label><ion-label>{{r.size}}</ion-label><br>
+            <ion-label id="label">Manufacturer: </ion-label><ion-label>{{r.manu}}</ion-label><br>
+            <ion-label id="label">Thickness: </ion-label><ion-label>{{r.thick}}</ion-label>
           </ion-card-content>
         </ion-card>
       </ion-content>

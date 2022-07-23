@@ -20,11 +20,15 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
-    <ion-title>Concreting & Masonry Products</ion-title>
+    <ion-title>Items</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card class="banner">
+    <p text-align="center">Concreting & Masonry
+    </p>
+  </ion-card>
   <ion-list *ngFor="let m of masonry">
     <ion-item button  id="{{m.id}}">{{m.name}}</ion-item>
 

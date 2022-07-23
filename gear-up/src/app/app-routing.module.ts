@@ -67,6 +67,14 @@ const routes: Routes = [
     path: 'rebar',
     loadChildren: () => import('./delete/rebar/rebar.module').then( m => m.RebarPageModule)
   },
+  {
+    path: 'painting',
+    loadChildren: () => import('./painting/painting.module').then( m => m.PaintingPageModule)
+  },
+  {
+    path: 'roofing',
+    loadChildren: () => import('./roofing/roofing.module').then( m => m.RoofingPageModule)
+  },
 
   
 

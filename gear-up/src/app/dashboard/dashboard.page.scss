@@ -1,5 +1,6 @@
 ion-content{
-    --background:rgb(255, 255, 255);
+    --background: linear-gradient(-135deg, rgba(222, 148, 0, 0.704), rgb(0, 0, 0));
+    --opacity:1;
 }
 ion-toolbar{
     --background:black;
@@ -73,4 +74,8 @@ p{
     font-family: century gothic;
     color: white;
     font-size: 20px;
+}
+ion-label{
+    font-family: century gothic;
+    font-size: 15px;
 }
