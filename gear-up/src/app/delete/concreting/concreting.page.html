@@ -26,7 +26,9 @@
 </ion-header>
 
 <ion-content>
-  <h2>Concreting and Masonry</h2>
+  <ion-card class="banner">
+    <h2>Concreting and Masonry</h2>
+  </ion-card>
   <ion-list *ngFor="let c of concreting">
     <ion-item button  id="{{c.id}}" (click)="presentAlert()">{{c.name}}</ion-item>
 
