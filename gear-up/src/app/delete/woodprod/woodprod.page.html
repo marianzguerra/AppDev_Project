@@ -26,7 +26,9 @@
 </ion-header>
 
 <ion-content>
-  <h2>Wood Products</h2>
+  <ion-card class="banner">
+    <h2>Wood Products</h2>
+  </ion-card>
   <ion-list *ngFor="let w of wood">
     <ion-item button  id="{{w.id}}" (click)="presentAlert()">{{w.name}}</ion-item>
 
