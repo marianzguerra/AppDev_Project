@@ -1,0 +1,37 @@
+<style>
+  ion-modal {
+    --height: 53%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    max-width: 700px; 
+  }
+
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+
+  ion-modal ion-toolbar {
+    --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
+    --color: white;
+  }
+  
+</style>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
+    <ion-title>DELETE ITEMS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>Concreting and Masonry</h2>
+  <ion-list *ngFor="let c of concreting">
+    <ion-item button  id="{{c.id}}" (click)="presentAlert()">{{c.name}}</ion-item>
+
+  
+</ion-list>
+</ion-content>
+
+

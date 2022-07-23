@@ -19,4 +19,10 @@ export class DeleteItemPage implements OnInit {
     this.router.navigate(['woodprod']);
   }
 
+  concrete(){
+    this.router.navigate(['concreting']);
+  }
+  pipes(){
+    this.router.navigate(['pipes']);
+  }
 }
