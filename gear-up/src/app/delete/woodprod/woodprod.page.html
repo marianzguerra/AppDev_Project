@@ -21,7 +21,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
-    <ion-title>DELETE ITEMS</ion-title>
+    <ion-title>Items</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -30,7 +30,6 @@
   <ion-list *ngFor="let w of wood">
     <ion-item button  id="{{w.id}}" (click)="presentAlert()">{{w.name}}</ion-item>
 
-  
 </ion-list>
 </ion-content>
 
