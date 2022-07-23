@@ -3,14 +3,6 @@ ion-content{
     z-index: inherit;
 }
 
-ion-button{
-    display: block;
-    font-family: Century Gothic;
-    font-size: 15px;
-    width: 30%;
-    margin: auto;
-    border: 3px;
-}
 
 ion-toolbar{
     --background:#000000;
@@ -28,12 +20,13 @@ ion-toolbar{
 .title{
     color: white;
 }
-p{
-    color: white;
+ion-label{
+    font-size: 12px;
+    color: black;
     font-family: century gothic;
 }
 ion-card{
-    background-image: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
+    //background-image: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
     width: 90%;
     max-width: 500px;
     align-items: center;
@@ -41,18 +34,20 @@ ion-card{
     justify-items: center;
     margin: 0 auto;
 }
-.col-6{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 
-}
 img{
-    border: 1px white solid;
     width: 75%;
-    padding: 10px;
-    margin-left: 10%;
-    box-shadow: inset;
+    padding: 4px;
+    height: 120px;
+    width: 120px;
 }
 ion-title{
     font-family: century gothic;
     font-size: 22px;
+}
+.img-container{
+    background-color: white;
+    border-radius: 5%;
+    height: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

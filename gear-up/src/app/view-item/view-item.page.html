@@ -5,48 +5,61 @@
     <ion-img class="profile" slot="end" src="assets/img/logo1.png"></ion-img>
   </ion-toolbar>
 </ion-header>
-
 <ion-content class="no-scroll">
   <div>
     <center><p class="title">C A T E G O R Y</p></center>
   </div>
   <div>
-    
-    <ion-card>  
+
+    <div>
       <ion-grid>
         <center>
         <ion-row>
           <ion-col col-12 col-sm>
-            <ion-buttons (click)="wood()"><img src="assets/img/floor.png" alt=""></ion-buttons>
-            <p>Wood Products</p>
+            <div class="img-container">
+              <ion-buttons (click)="wood()"><img src="assets/img/wood.png" alt=""></ion-buttons>
+              <ion-label>Wood Products</ion-label>
+            </div>
+            
           </ion-col>
           <ion-col>
-            <ion-buttons (click)="masonry()"><img src="assets/img/concrete.png" alt=""></ion-buttons>
-            <p>Concreting and Masonry</p>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <ion-buttons (click)="rebars()"><img src="assets/img/bar.png" alt=""></ion-buttons>
-            <p>Rebars and GI Supplies</p>
-          </ion-col>
-          <ion-col>
-            <ion-buttons><img src="assets/img/roof.png" alt=""></ion-buttons>
-            <p>Roofing and Insulation</p>
+            <div class="img-container">
+              <ion-buttons><img src="assets/img/masonry.png" alt=""></ion-buttons>
+            <ion-label>Concreting and Masonry</ion-label>
+            </div>
+            
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-buttons><img src="assets/img/paint.png" alt=""></ion-buttons>
-            <p>Painting Supplies</p>
+            <div class="img-container">
+              <ion-buttons><img src="assets/img/rebars.png" alt=""></ion-buttons>
+              <ion-label>Rebars and GI Supplies</ion-label>
+            </div>
           </ion-col>
           <ion-col>
-            <ion-buttons (click)="plumbing()"><img src="assets/img/pipe.png" alt=""></ion-buttons>
-            <p>Plumbing Pipes & Accessories</p>
+            <div class="img-container">
+              <ion-buttons><img src="assets/img/roofs.png" alt=""></ion-buttons>
+              <ion-label>Roofing and Insulation</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons><img src="assets/img/paints.png" alt=""></ion-buttons>
+            <ion-label>Painting Supplies</ion-label>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons><img src="assets/img/plumb.png" alt=""></ion-buttons>
+            <ion-label>Plumbing Pipes & Accessories</ion-label>
+            </div>
           </ion-col>
         </ion-row>
         </center>
       </ion-grid>
-    </ion-card>
+    </div>
   </div>
 </ion-content>
