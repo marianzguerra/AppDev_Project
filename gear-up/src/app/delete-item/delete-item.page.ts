@@ -28,5 +28,10 @@ export class DeleteItemPage implements OnInit {
   rebar(){
     this.router.navigate(['rebar']);
   }
-  
+  insulation(){
+    this.router.navigate(['insulation']);
+  }
+  paint(){
+    this.router.navigate(['paint']);
+  }
 }

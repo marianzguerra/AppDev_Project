@@ -75,6 +75,14 @@ const routes: Routes = [
     path: 'roofing',
     loadChildren: () => import('./roofing/roofing.module').then( m => m.RoofingPageModule)
   },
+  {
+    path: 'insulation',
+    loadChildren: () => import('./delete/insulation/insulation.module').then( m => m.InsulationPageModule)
+  },
+  {
+    path: 'paint',
+    loadChildren: () => import('./delete/paint/paint.module').then( m => m.PaintPageModule)
+  },
 
   
 

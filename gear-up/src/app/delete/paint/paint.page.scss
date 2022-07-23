@@ -1,6 +1,6 @@
 ion-content{
-    --background: linear-gradient(-135deg, rgba(222, 148, 0, 0.704), rgb(0, 0, 0));
-    --opacity:1;
+    --background:#ffffff;
+    z-index: inherit;
 }
 
 ion-button{
@@ -32,9 +32,7 @@ ion-toolbar{
 }
 h2{
     margin-left: 20px;
-    font-size: 18px;
-    font-weight: lighter;
-    color: #ffffff;
+    font-weight: bolder;
 }
 .modal-buttons{
     width: 100px;
@@ -43,9 +41,5 @@ h2{
 
 ion-title{
     font-family: century gothic;
-    font-size: 17px;
-    font-weight: lighter;
-}
-.banner{
-    --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.6));
+    font-size: 22px;
 }
