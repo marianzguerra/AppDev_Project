@@ -63,6 +63,10 @@ const routes: Routes = [
     path: 'pipes',
     loadChildren: () => import('./delete/pipes/pipes.module').then( m => m.PipesPageModule)
   },
+  {
+    path: 'rebar',
+    loadChildren: () => import('./delete/rebar/rebar.module').then( m => m.RebarPageModule)
+  },
 
   
 

@@ -25,4 +25,8 @@ export class DeleteItemPage implements OnInit {
   pipes(){
     this.router.navigate(['pipes']);
   }
+  rebar(){
+    this.router.navigate(['rebar']);
+  }
+  
 }
