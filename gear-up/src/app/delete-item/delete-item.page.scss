@@ -1,6 +1,6 @@
 ion-content{
-    --background:#ffffff;
-    z-index: inherit;
+    --background: linear-gradient(-135deg, rgba(222, 148, 0, 0.704), rgb(0, 0, 0));
+        --opacity:1;
 }
 
 ion-button{
@@ -52,13 +52,14 @@ p{
     font-family: century gothic;
 }
 .img-container{
-    background-color: white;
-    border-radius: 5%;
-    height: 160px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+   
+        background-color: white;
+        border-radius: 5%;
+        height: 155px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 ion-label{
-    font-size: 12px;
+    font-size: 14px;
     color: black;
     font-family: century gothic;
 }
@@ -68,3 +69,9 @@ img{
     height: 120px;
     width: 120px;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
