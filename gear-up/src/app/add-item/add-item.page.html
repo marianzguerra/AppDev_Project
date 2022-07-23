@@ -19,18 +19,18 @@
       </ion-item>
       <span>
         <ng-container *ngIf="addItem.get('item').hasError('required')&& (addItem.get('item').touched || addItem.get('item').dirty)">
-          Field Cannot Be Empty.
+          <h6>Field Cannot Be Empty.</h6>
         </ng-container>
       </span>
       <ion-item lines="full">
-        <ion-label position="floating"><b>Item Number</b></ion-label>
+        <ion-label position="floating" ><b>Item Number</b></ion-label>
         <div class="input">
           <ion-input placeholder="  Add item Number" type="number" formControlName="num"></ion-input>
         </div>
       </ion-item>
       <span>
         <ng-container *ngIf="addItem.get('num').hasError('required')&& (addItem.get('num').touched || addItem.get('num').dirty)">
-          Field Cannot Be Empty.
+          <h6>Field Cannot Be Empty.</h6>
         </ng-container>
       </span>
       <ion-item lines="full">
@@ -41,7 +41,7 @@
       </ion-item>
       <span>
         <ng-container *ngIf="addItem.get('qty').hasError('required')&& (addItem.get('qty').touched || addItem.get('qty').dirty)">
-          Field Cannot Be Empty.
+          <h6>Field Cannot Be Empty.</h6>
         </ng-container>
       </span>
       <ion-item lines="full">
@@ -52,7 +52,7 @@
       </ion-item>
       <span>
         <ng-container *ngIf="addItem.get('category').hasError('required')&& (addItem.get('category').touched || addItem.get('category').dirty)">
-          Field Cannot Be Empty.
+          <h6>Field Cannot Be Empty.</h6>
         </ng-container>
       </span>
 <ion-button [disabled]="!addItem.valid" (click)="presentAlert()">Add Item</ion-button>

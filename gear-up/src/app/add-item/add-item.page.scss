@@ -1,13 +1,14 @@
-ion-content{
+/**ion-content{
     --background:linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
-}
+}*/
 ion-button{
     display: block;
-    font-family: Century Gothic;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    width: 30%;
+    width: 60%;
     margin: auto;
-    border: 3px;
+    margin-top: 10px;
+
 }
 
 ion-toolbar{
@@ -53,10 +54,13 @@ ion-input{
 
 }
 ion-label{
-    padding-left:5px;
-   
+    padding-left:2px;   
+    
 }
-
+b{
+    color: #896e00;
+    font-size: 12px;
+}
 .my-label {
     font-size: 20px;
     font-family: Century Gothic;
@@ -64,4 +68,10 @@ ion-label{
   ion-title{
     font-family: century gothic;
     font-size: 22px;
+}
+h6{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 10px;
 }
