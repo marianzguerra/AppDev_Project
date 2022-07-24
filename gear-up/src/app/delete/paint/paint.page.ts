@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 
 
 @Component({
@@ -18,7 +18,7 @@ export class PaintPage implements OnInit {
     {id: 5, name: 'Megacryl MCS Semi Gloss 100% Acrylic Latex Paint', brand: "Davies", size: "4 Liters", base: "Acrylic-based", best: "Properly primed wood and metal", cat: 'paint'}
 ]
 
-constructor( private router:Router,private alertController: AlertController) { }
+constructor( private router:Router,private alertController: AlertController, public Toast: ToastController) { }
 
 ngOnInit() {
 }
@@ -33,11 +33,17 @@ async presentAlert() {
     buttons: [
       {
         text: 'No',
-        cssClass: 'alert-button-cancel'
+        role: "cancel",
+        cssClass: 'alert-button-cancel',
+        handler: ()=>{ }
       },
       {
         text: 'Yes',
-        cssClass: 'alert-button-confirm'
+        cssClass: 'alert-button-confirm',
+        handler: ()=> {
+            this.ShowMessage();
+        }
+
       }
     ]
   });
@@ -45,4 +51,14 @@ async presentAlert() {
   await alert.present();
 }
 
+async ShowMessage(){
+  let toast = await this.Toast.create({
+    message: "Item Deleted Successfully!",
+    icon: "checkmark-done-outline",
+    cssClass: "custom-toast",
+    color: "success",
+    duration: 3000
+  });
+  await toast.present();
+}
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 
 
 @Component({
@@ -18,7 +18,7 @@ export class InsulationPage implements OnInit {
     {id: 5, name: 'Asphalt Shingle roof', size: "13 1/4 x 12", thick: "3/16",  cat: 'insulation'}
 ]
 
-constructor( private router:Router,private alertController: AlertController) { }
+constructor( private router:Router,private alertController: AlertController, public Toast: ToastController) { }
 
 ngOnInit() {
 }
@@ -33,16 +33,30 @@ async presentAlert() {
     buttons: [
       {
         text: 'No',
-        cssClass: 'alert-button-cancel'
+        role: "cancel",
+        cssClass: 'alert-button-cancel',
+        handler: ()=>{ }
       },
       {
         text: 'Yes',
-        cssClass: 'alert-button-confirm'
+        cssClass: 'alert-button-confirm',
+        handler: ()=> {
+            this.ShowMessage();
+        }
+
       }
     ]
   });
 
   await alert.present();
+}
+
+async ShowMessage(){
+  let toast = await this.Toast.create({
+    message: "Item Deleted Successfully!",
+    duration: 3000
+  });
+  await toast.present();
 }
 
 }

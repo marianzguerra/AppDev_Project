@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 
 
 @Component({
@@ -18,7 +18,7 @@ export class PipesPage implements OnInit {
     {id: 5, name: 'Elbow Reducer 90 Degree Pipe', size: "3/4", thick: "0.119", brand: "Solutherm", cat: 'plumbing'}
 ]
 
-constructor( private router:Router,private alertController: AlertController) { }
+constructor( private router:Router,private alertController: AlertController, public Toast: ToastController) { }
 
 ngOnInit() {
 }
@@ -33,16 +33,33 @@ async presentAlert() {
     buttons: [
       {
         text: 'No',
-        cssClass: 'alert-button-cancel'
+        role: "cancel",
+        cssClass: 'alert-button-cancel',
+        handler: ()=>{ }
       },
       {
         text: 'Yes',
-        cssClass: 'alert-button-confirm'
+        cssClass: 'alert-button-confirm',
+        handler: ()=> {
+            this.ShowMessage();
+        }
+
       }
     ]
   });
 
   await alert.present();
+}
+
+async ShowMessage(){
+  let toast = await this.Toast.create({
+    message: "Item Deleted Successfully!",
+    icon: "checkmark-done-outline",
+    cssClass: "custom-toast",
+    color: "success",
+    duration: 3000
+  });
+  await toast.present();
 }
 
 }
