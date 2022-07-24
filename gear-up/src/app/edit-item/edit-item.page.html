@@ -2,7 +2,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
-    <ion-title align="center">EDIT ITEM</ion-title>
+    <ion-title align="center">Edit Item</ion-title>
     <ion-img class="profile" slot="end" src="assets/img/logo1.png"></ion-img>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +10,7 @@
 <ion-content>
   <br>
 
-    <ion-searchbar class="search" [(ngModel)]="term" animated color="primary" fill="outline"></ion-searchbar>
+    <ion-searchbar class="search" [(ngModel)]="term" animated style="color:gold" fill="outline"></ion-searchbar>
 
     <ion-list *ngIf="term">
       <div class="items" *ngFor="let item of list |filter:term">
@@ -18,7 +18,7 @@
       </div>
     </ion-list>
       <div *ngIf="!term">
-        <p style="color: white; text-align:center">Results will be shown here.</p>
+        <p style="color: gray; text-align:center">Results will be shown here.</p>
       </div>
     
   
