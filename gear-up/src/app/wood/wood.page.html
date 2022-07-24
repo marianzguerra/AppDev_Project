@@ -20,11 +20,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons (click)="back()"><ion-img class="back-btn" slot="start" src="assets/img/back.png"></ion-img></ion-buttons> 
-    <ion-title>Wood Products</ion-title>
+    <ion-title>Items</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card class="banner">
+    <p>
+      Wood Products
+    </p>
+  </ion-card>
   <ion-list *ngFor="let w of wood">
     <ion-item button  id="{{w.id}}">{{w.name}}</ion-item>
 
