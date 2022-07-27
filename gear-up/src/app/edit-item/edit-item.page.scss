@@ -48,3 +48,66 @@ p{
     font-style: italic;
     font-size: 13px;
 }
+
+ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    max-width: 700px; 
+  }
+
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+
+  ion-modal ion-toolbar {
+    --background: linear-gradient(35deg, rgb(0, 0, 0),rgba(254, 148, 0, 0.782));
+    --color: white;
+  }
+
+  
+.add-card{
+    background-color: white;
+    width: 80%;
+    margin-top:20%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+ion-card-content, ion-item{
+    --background: white;
+    font-size: 15px;
+    font-family: century gothic;
+}
+
+    
+ion-input{
+    --padding-bottom:0%;
+    --padding-left: 10px;
+    font-family: Century Gothic;
+
+}
+ion-label{
+    padding-left:2px;   
+    
+}
+b{
+    color: #896e00;
+    font-size: 12px;
+}
+.my-label {
+    font-size: 20px;
+    font-family: Century Gothic;
+  }
+  ion-title{
+    font-family: century gothic;
+    font-weight: lighter;
+    font-size: 18px;
+    justify-content: left;
+}
+h6{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 10px;
+}

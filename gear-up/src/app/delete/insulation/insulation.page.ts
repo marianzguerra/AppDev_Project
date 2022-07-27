@@ -54,6 +54,7 @@ async presentAlert() {
 async ShowMessage(){
   let toast = await this.Toast.create({
     message: "Item Deleted Successfully!",
+    color: "success",
     duration: 3000
   });
   await toast.present();

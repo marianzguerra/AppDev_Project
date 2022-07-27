@@ -14,12 +14,55 @@
 
     <ion-list *ngIf="term">
       <div class="items" *ngFor="let item of list |filter:term">
-        <ion-item button (click)="editDetail()">{{item.name}}</ion-item>
+        <ion-item button id="{{item.id}}">{{item.name}}</ion-item>
+
+        <ion-modal #modal trigger="{{item.id}}">
+          <ng-template>
+            <div>
+              <form action="">
+                <div class="add-container">
+                  <ion-item lines="full">
+                    <ion-label><b>Item Name</b></ion-label>
+                    <div class="input">
+                      <ion-input lines="none" type="text">{{item.name}}</ion-input>
+                    </div>  
+                  </ion-item>
+                  <ion-item lines="full">
+                    <ion-label><b>Item Number</b></ion-label>
+                    <div class="input">
+                      <ion-input type="number">{{item.id}}</ion-input>
+                    </div>
+                  </ion-item>
+                  <ion-item lines="full">
+                    <ion-label><b>Item Quantity</b></ion-label>
+                    <div class="input">
+                      <ion-input type="number">{{item.qty}}</ion-input>
+                    </div>
+                  </ion-item>
+                  <ion-item lines="full">
+                    <ion-label><b>Item Category</b></ion-label>
+                    <div class="input">
+                      <ion-input  type="text">{{item.cat}}</ion-input>
+                    </div>
+                  </ion-item>
+                  <ion-button>Save Changes</ion-button>
+                </div>
+                      
+              </form>
+            </div>
+          </ng-template>
+        </ion-modal>
       </div>
+
+      
+
     </ion-list>
       <div *ngIf="!term">
         <p style="color: gray; text-align:center">Results will be shown here.</p>
       </div>
+
+    
+      
     
   
 </ion-content>
