@@ -57,7 +57,7 @@ export class EditItemPage implements OnInit {
       message: 'Changes were saved successfully',
       duration: 3000,
       color: "success",
-      position: 'top'
+      position: 'bottom'
     });
   
   
