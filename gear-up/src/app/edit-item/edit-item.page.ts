@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 
 @Component({
@@ -39,9 +40,10 @@ export class EditItemPage implements OnInit {
     {id: 62, name: 'Hollow Blocks', brand: "Allied Concrete", type: "Partition block", cap: "1/2 inches", qty: 250, cat: 'Concreting and Masonry'},
     {id: 63, name: 'Magnesium Hand Floats', brand: "Marshalltwon", type: "Broken-In", qty: 30, cat: 'Concreting and Masonry'},
     {id: 64, name: 'Wheel Barrow', brand: "Creston", type: "Deep Type", qty: 10, cat: 'Concreting and Masonry'},
-    {id: 65, name: 'Cement Mixer Manual', brand: "Phinma Corporation", type: "Pan Type Mixer", cap: "300 Pounds", qty: 7, cat: 'Concreting and Masonry'}]
+    {id: 65, name: 'Cement Mixer Manual', brand: "Phinma Corporation", type: "Pan Type Mixer", cap: "300 Pounds", qty: 7, cat: 'Concreting and Masonry'}
+  ]
 
-  constructor( private router:Router) { }
+  constructor( private router:Router, public toastCtrl: ToastController) { }
 
   ngOnInit() {
   }
@@ -50,10 +52,16 @@ export class EditItemPage implements OnInit {
     this.router.navigate(['dashboard']);
   }
 
-  openModal(){
-    const data={
-      name
-    }
+  async presentToast() {
+    let toast = await this.toastCtrl.create({
+      message: 'Changes were saved successfully',
+      duration: 3000,
+      color: "success",
+      position: 'top'
+    });
+  
+  
+    await toast.present();
   }
 
 }

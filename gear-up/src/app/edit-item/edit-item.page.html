@@ -19,35 +19,40 @@
         <ion-modal #modal trigger="{{item.id}}">
           <ng-template>
             <div>
+              <ion-toolbar>
+                <h2>Edit Information</h2>
+                <ion-buttons slot="end" color="light" (click)="modal.dismiss()"><ion-img  class="close" src="assets/img/cancel.png"></ion-img></ion-buttons>
+              </ion-toolbar>
               <form action="">
                 <div class="add-container">
                   <ion-item lines="full">
-                    <ion-label><b>Item Name</b></ion-label>
+                    <ion-label position="stacked"><b>Item Name</b></ion-label>
                     <div class="input">
-                      <ion-input lines="none" type="text">{{item.name}}</ion-input>
+                      <ion-input lines="none" type="text" value="{{item.name}}"></ion-input>
                     </div>  
                   </ion-item>
                   <ion-item lines="full">
-                    <ion-label><b>Item Number</b></ion-label>
+                    <ion-label position="stacked"><b>Item Number</b></ion-label>
                     <div class="input">
-                      <ion-input type="number">{{item.id}}</ion-input>
+                      <ion-input type="number" value="{{item.id}}"></ion-input>
                     </div>
                   </ion-item>
                   <ion-item lines="full">
-                    <ion-label><b>Item Quantity</b></ion-label>
+                    <ion-label position="stacked"><b>Item Quantity</b></ion-label>
                     <div class="input">
-                      <ion-input type="number">{{item.qty}}</ion-input>
+                      <ion-input type="number"value="{{item.qty}}"></ion-input>
                     </div>
                   </ion-item>
                   <ion-item lines="full">
-                    <ion-label><b>Item Category</b></ion-label>
+                    <ion-label position="stacked"><b>Item Category</b></ion-label>
                     <div class="input">
-                      <ion-input  type="text">{{item.cat}}</ion-input>
+                      <ion-input  type="text"value="{{item.cat}}"></ion-input>
                     </div>
                   </ion-item>
-                  <ion-button>Save Changes</ion-button>
+                  <div class="save">
+                    <ion-button type="submit" (click)="presentToast()">Save Changes</ion-button>
+                  </div>
                 </div>
-                      
               </form>
             </div>
           </ng-template>
