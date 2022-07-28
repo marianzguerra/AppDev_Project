@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -8,5 +9,9 @@ export class AppComponent {
   public appPages = [
     
   ];
-  constructor() {}
+  constructor(public router:Router){}
+  
+  login(){
+    this.router.navigate(['login']);
+  }
 }
