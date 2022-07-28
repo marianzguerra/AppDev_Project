@@ -58,15 +58,17 @@ ion-title{
 }
 .grid img{
     background-color: white;
-    width: 80%;
+    width:80%;
+    max-width: 120px;
     margin-top: 20px;
 }
 .buttons{
-    margin-left: 15%;
+    display: block;
 }
-.icons{ background-color: white;
+.icons{ 
+    background-color: white;
     border-radius: 5%;
-    height: 120px;
+    height: 150px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
