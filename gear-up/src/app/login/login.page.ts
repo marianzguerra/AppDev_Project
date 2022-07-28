@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import {Router} from '@angular/router';
 
 @Component({
@@ -9,13 +9,14 @@ import {Router} from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  loginForm = new FormGroup({
-    uname : new FormControl ('', Validators.required),
-    pass : new FormControl('', Validators.required)
-  })
+
+  loginForm = this.formBuilder.group({
+    uname: new FormControl('', Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(12)])),
+    pass: new FormControl('', Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(12)]))
+  });
 
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public formBuilder: FormBuilder) { }
 
   ngOnInit() {
 
