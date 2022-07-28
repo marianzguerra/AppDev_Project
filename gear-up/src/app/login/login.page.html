@@ -10,22 +10,32 @@
       <ion-img src="assets/img/blue.png"></ion-img>
     </div>-->
   
-    <form>
+    <form [formGroup]="loginForm">
       <div class="form-wrapper">
         <ion-item color="transparent" lines="none">
           <ion-label position="floating"><p style="color: gold;">Username </p></ion-label>
             <!--<ion-icon name="mail"></ion-icon>-->
-            <ion-input type="text">  </ion-input>
+            <ion-input type="text" formControlName="uname">  </ion-input>
         
         </ion-item>
+        <span>
+          <ng-container *ngIf="loginForm.get('uname').hasError('required')&& (loginForm.get('uname').touched || loginForm.get('uname').dirty)">
+            <h6>Username is required.</h6>
+          </ng-container>
+        </span>
           <br>
         <ion-item color="transparent" lines="none">
           <ion-label position="floating"><p style="color: gold;">Password </p></ion-label>
           <!--<ion-icon name="key-outline"></ion-icon>-->
-          <ion-input type="Password">  </ion-input>
+          <ion-input type="Password" formControlName="pass">  </ion-input>
         </ion-item>
+        <span>
+          <ng-container *ngIf="loginForm.get('pass').hasError('required')&& (loginForm.get('pass').touched || loginForm.get('pass').dirty)">
+            <h6>Password is required.</h6>
+          </ng-container>
+        </span>
           
-        <ion-button id="login" fill="clear" (click)="dashboard()">Login</ion-button>
+        <ion-button [disabled]="!loginForm.valid" id="login" fill="clear" (click)="dashboard()">Login</ion-button>
       </div>
     </form>
   </body>
