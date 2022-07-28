@@ -58,9 +58,10 @@ ion-alert.custom-alert {
     border-top-right-radius: 13px;
   }
 
-  ion-toast.custom-toast{
+  .custom-toast{
         --start: 30px;
         --width: 70%;
-        --background: 'success':
+        text-align: center;
+        color: darkcyan;
         
   }
