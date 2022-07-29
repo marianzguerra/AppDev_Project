@@ -22,6 +22,7 @@ export class LoginPage implements OnInit {
 
   }
 dashboard(){
-  this.router.navigate(['dashboard'])
+  this.router.navigate(['dashboard']);
+  this.loginForm.reset();
 }
 }

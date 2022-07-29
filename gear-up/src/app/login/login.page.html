@@ -10,7 +10,7 @@
       <ion-img src="assets/img/blue.png"></ion-img>
     </div>-->
   
-    <form [formGroup]="loginForm">
+    <form [formGroup]="loginForm" (ngSubmit)="dashboard()">
       <div class="form-wrapper">
         <ion-item color="transparent" lines="none">
           <ion-label position="floating"><p style="color: gold;">Username </p></ion-label>
@@ -35,7 +35,7 @@
           </ng-container>
         </span>
           
-        <ion-button [disabled]="!loginForm.valid" id="login" fill="clear" (click)="dashboard()">Login</ion-button>
+        <ion-button type="submit" [disabled]="!loginForm.valid" id="login" fill="clear">Login</ion-button>
       </div>
     </form>
   </body>

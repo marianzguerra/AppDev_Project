@@ -28,7 +28,10 @@ export class AddItemPage {
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'New Item Added Successfully!',
-      buttons: ['OK']
+      buttons: [{
+        text:'OK',
+        role: "confirm",
+        }]
     });
 
     await alert.present();
