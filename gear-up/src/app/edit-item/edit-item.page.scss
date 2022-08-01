@@ -9,6 +9,7 @@ ion-button{
     width: 30%;
     margin: auto;
     border: 3px;
+    margin-bottom: 20px;
 }
 
 ion-toolbar{
@@ -51,7 +52,7 @@ p{
 }
 
 ion-modal {
-    --height: 65%;
+    --height: 66%;
     --border-radius: 16px;
     --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     max-width: 700px; 
@@ -60,6 +61,8 @@ ion-modal {
   ion-modal::part(backdrop) {
     background: rgba(209, 213, 219);
     opacity: 1;
+    
+
   }
 
   ion-modal ion-toolbar {
@@ -70,9 +73,8 @@ ion-modal {
   
 .add-card{
     background-color: white;
-    width: 80%;
-    margin-top:20%;
-    margin-left: 10%;
+    width: 100%;
+    margin: 0 auto;
     border-radius: 20px;
 }
 ion-card-content, ion-item{
@@ -119,4 +121,5 @@ h6{
     width: 27px;
     height: 27px;
 }
+
 

@@ -53,7 +53,6 @@ async presentAlert() {
 async ShowMessage(){
   let toast = await this.Toast.create({
     message: "Item Deleted Successfully!",
-    icon: "checkmark-done-outline",
     cssClass: "custom-toast",
     color: "success",
     duration: 3000
