@@ -31,6 +31,9 @@ export class AddItemPage {
       buttons: [{
         text:'OK',
         role: "confirm",
+        handler: ()=>{
+          this.addItem.reset();
+        }
         }]
     });
 
